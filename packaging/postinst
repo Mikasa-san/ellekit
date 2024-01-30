@@ -37,9 +37,9 @@ if [[ -f /dev/rmd0 ]]; then
 
     # palera1n changes not currently implemented, so always run loader
     run_loader
-elif [[ -f /var/jb/.installed_dopamine || -f /var/jb/.installed_fugu15max ||
-    -f /var/jb/.installed_meowbrek ||
-    -f /var/jb/.xia0o0o0o_jb_installed ]]; then
+elif [[ -f @INSTALL_PREFIX@/.installed_dopamine || -f @INSTALL_PREFIX@/.installed_fugu15max ||
+    -f @INSTALL_PREFIX@/.installed_meowbrek ||
+    -f @INSTALL_PREFIX@/.xia0o0o0o_jb_installed ]]; then
     # Dopamine/meowbrek2/Def1nit3lyN0tAJa1lbr3akTool systemhooks load /var/jb/usr/lib/TweakLoader.dylib
     true
 elif [[ -f /.installed_taurine || -f /.installed_odyssey ]]; then
