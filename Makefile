@@ -13,7 +13,7 @@ CONFIGURATION = Release
 DEB_VERSION = $(VERSION)
 else
 CONFIGURATION = Debug
-DEB_VERSION = $(VERSION)+debug
+DEB_VERSION = $(VERSION)
 endif
 
 ifneq ($(MAC),)
